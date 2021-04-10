@@ -71,12 +71,12 @@ function keyPressed() {
     // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
 	Matter.Body.setStatic(packageBody,false)
   } else if (keycode === LEFT_ARROW){
-     helicopter.x-20
+    helicopter.x = helicopter.x-20
    var option = {x:-20,y:0}
     Matter.Body.translate(packageBody,option)
    
 	}else if (keycode === RIGHT_ARROW){
-		helicopter.x+20
+	helicopter.x = helicopter.x+20
 	  var option = {x:+20,y:0}
 	   Matter.Body.translate(packageBody,option)
 	  
